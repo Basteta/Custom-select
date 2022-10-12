@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import SearchInput from "./SearchInput";
-import List, { Option } from "./List";
+
+import { Button, Card } from "react-bootstrap";
+
 import { useWindowSize } from "../hooks/useWindowSize";
 import classes from "./DualList.module.scss";
-import { Button, Card } from "react-bootstrap";
+import List, { Option } from "./List";
+import SearchInput from "./SearchInput";
 
 const DualList: React.FC<{ data: Option[] }> = (props) => {
   const leftList = props.data;

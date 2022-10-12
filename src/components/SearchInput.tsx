@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef, ChangeEvent } from "react";
-import useDebounce from "../hooks/useDebounce";
 
 import { Form, InputGroup, Button } from "react-bootstrap";
+
+import useDebounce from "../hooks/useDebounce";
 
 interface InputSearchProps {
   onChangeSearchQuery: (searchQuery: string) => void;
